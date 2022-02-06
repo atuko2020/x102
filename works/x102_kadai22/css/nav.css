@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+header{
+  position: relative;
+}
+
+header nav {
+  background-color: #928484;
+  width: 100%;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+header nav ul{
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  padding: 6px;
+  list-style-type: none;
+}
+
+/* 2021-11-22修正 デザインの変更に伴い追記 */
+header nav li:nth-child(1){
+  border-left: groove 2px #fff;
+}
+header nav li{
+  padding: 0.5rem;
+  border-right: groove 2px #fff;
+}
+header nav li:hover{
+  background-color: #690;
+}
+
+
+header nav li:hover{
+  background-color: #690;
+}
+
+header nav a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Kaisei Tokumin', serif;
+
+}
+
+
+/***********************************************/
+/* 20211025 モバイル版 追加
+/***********************************************/
+@media (max-width: 800px) {
+
+  header nav ul{
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    padding: 6px;
+    list-style-type: none;
+
+  }
+  /* 2021-11-22修正 デザインの変更に伴い追記 */
+  header nav li:nth-child(1){
+    border-left: 0;
+    border-top: groove 2px #fff;
+  }
+  header nav li{
+    border-right: 0;
+    border-bottom: groove 2px #fff;
+  }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- Contact_Me YASUAKI-SIMURA  -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>X102_YASUAKI SIMURA</title>
+    <meta name="description" content="form YASUAKI-SIMURA">
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- header  -->
+      <header>
+        <h1>X102アンケート</h1>
+      </header>
+
+      <!-- main  -->
+      <main>
+        <section>
+          <!-- <h2>アンケート</h2> -->
+          <!-- Warning回避のための見出し -->
+          <form action="#" method="POST" name="contact-form">
+            <label>名前:<input type="text" name="name" placeholder="名字 名前"></label><br>
+            <p>性別:</p>
+              <label><input type="radio" name="sex" value="男"> 男</label>
+              <label><input type="radio" name="sex" value="女"> 女</label>
+              <label><input type="radio" name="sex" value="その他" checked> その他</label><br>
+            <p>好きな色:</p>
+              <label><input type="checkbox" name="color" value="赤" checked> 赤</label>
+              <label><input type="checkbox" name="color" value="青"> 青</label>
+              <label><input type="checkbox" name="color" value="黄"> 黄</label>
+              <label><input type="checkbox" name="color" value="緑"> 緑</label><br>
+            <label for="blood_type">血液型:</label>
+            <select name="blood type" id="blood_type">
+              <option value="A">A型</option>
+              <option value="B">B型</option>
+              <option value="AB">AB型</option>
+              <option value="O">O型</option>
+              <option value="不明">不明</option>
+            </select><br>
+            <br>
+            <label for="email">メールアドレス(任意):</label>
+            <input type="email" name="email" id="email"><br>
+
+            <input type="image" src="images/button.png" alt="送信する">
+            <!--<button type="submit"><img src="images/button.png" alt="送信する"></button>  20210705修正-->
+          </form>
+        </section>
+      </main>
+
+      <!-- footer Sectiion-->
+      <footer>
+        <p>Last Modijied :
+          <script>
+            var modified = new Date(document.lastModified);
+            var year = modified.getFullYear();
+            var month = modified.getMonth() + 1;
+            var date = modified.getDate();
+            var dayName = ["日", "月", "火", "水", "木", "金", "土"]
+
+            var day = modified.getDay();
+
+            document.write(year + "年" + month + "月" + date + "日" + dayName[day] + "曜日");
+          </script>
+        </p>
+        <p><small>&copy;YASUAKI SIMUR, ALL Rights Reserved.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>

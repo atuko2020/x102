@@ -1,0 +1,38 @@
+@charset "UTF-8";
+html {
+  /*スクロールを滑らかにする文*/
+  scroll-behavior: smooth;
+}
+#pagetop{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  /*透明度の調整(デフォルト状態＝半透明　アクション時＝不透明)*/
+  opacity:0.5;
+}
+
+/*twitter画像をホバーした時(画像の上にカーソルがある時)*/
+#pagetop:hover{
+  /*画像を不透明に変更*/
+  opacity: 1;
+  /*カーソル変更*/
+  cursor: pointer;
+}
+/*クリックした瞬間*/
+#pagetop:active{
+  /*位置を3px下げる*/
+  position: fixed;
+  right: 50px;
+  bottom: 47px;
+}
+
+/* twitter画像をクリックした瞬間 */
+img.twitter_button:active{
+
+	/* 要素を若干下に下げることで、押した感じを出す。*/
+
+	/* 今いる位置から相対的に3px下に配置する。*/
+	position: relative;
+	top: 3px;
+
+}

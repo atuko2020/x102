@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+  background-image: url(../images/bg.png);
+  /* background-size: cover; */
+}
+h1{
+  /* font-family: serif; 210906修正*/
+  font-family: 'Kaisei Tokumin', serif;
+  background: #faa;
+  color: #fff;
+}
+h2{
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  background: #faa;
+  color: #777;
+}
+p{
+  font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+  text-align: justify;
+  /* 一部削除 21-09-13 */
+  line-height: 170%;
+  color: #000;
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+main{
+  background-color: #ffffee;
+  color: #664032;
+
+  margin: auto 1rem;
+  padding: 2rem;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
+#Left_page{
+  justify-content: space-around;
+  height: 600px;
+
+}
+#Right_page{
+  min-width: 500px;
+  padding: 1rem;
+}
+
+main img{
+  width: auto;
+  margin: 10px auto;
+}
+
+
+main #Left_page img{
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+}
+
+
+h2{
+}
+
+h3{
+}
+
+
+
+/***********************************************/
+/* モバイル版
+/***********************************************/
+@media (max-width: 800px) {
+  main{
+    background-color: #fff;
+    color: #664032;
+
+    margin: auto 1rem;
+    padding: 2rem;
+  }
+
+  #Left_page{
+    height: 600px;
+
+  }
+  #Right_page{
+    padding: 1rem;
+  }
+}

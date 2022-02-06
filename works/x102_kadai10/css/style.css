@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+  margin: 0;
+  background-image: url(../images/bg.png);
+  /*2021-09-27 不要な分の削除*/
+  /*margin: auto;*/
+}
+#container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fdd;
+}
+header{
+  height: 300px;
+  background: #faa;
+}
+section{
+  margin: 1rem auto;
+}
+h1{
+  font-family: 'Kaisei Tokumin', serif;
+  margin: 0px;
+  padding: 1rem 1rem 0rem;
+  color: #fff;
+}
+h2{
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  margin: 0px;
+  padding: 0.5rem 0.5rem 0rem;
+  border-width: 0px 0px 5px 5px;
+  border-style: solid ;
+  border-color: #000 #000 #777 #faa;
+  color: #777;
+}
+p{
+  font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+  margin: 0px;
+  text-align: justify;
+  padding: 0rem 1rem;
+  /*2021-09-27 170%→1.7に修正*/
+  line-height: 1.7;
+  color: #777;
+}
+q{ font-size: 1.2rem }

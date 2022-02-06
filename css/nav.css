@@ -1,0 +1,68 @@
+@charset "UTF-8";
+header nav {
+  margin: auto;
+  clear: both;
+  width: 100%;
+  color: white;
+}
+header nav ul{
+  margin: auto;
+  width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  padding: 6px;
+  list-style-type: none;
+  justify-content: center;
+}
+header nav li{
+  padding: 0.5rem;
+  border-left: groove 2px #fff;
+}
+header nav li:last-child{
+  border-right: groove 2px #fff;
+}
+
+header nav a{
+  /*color: #664032;*/
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+
+/*===============================
+/          Animation
+/==============================*/
+header nav li:hover{
+  background-color: #333;
+  transition-duration: 0.5s;
+}
+
+
+/***********************************************/
+/* モバイル版
+/***********************************************/
+@media (max-width: 800px) {
+  header nav ul{
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    padding: 6px;
+    list-style-type: none;
+
+  }
+  header nav li{
+    border: none;
+
+    min-width: 100px;
+    border-top: groove 2px #fff;
+  }
+  header nav li:last-child{
+    border-right: 0;
+
+    border-bottom: groove 2px #fff;
+  }
+}

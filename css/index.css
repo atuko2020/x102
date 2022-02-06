@@ -1,0 +1,30 @@
+@charset "UTF-8";
+main{
+  margin: auto;
+  text-align:center;
+  padding:20px 0;
+}
+main img{
+  width: auto;
+  margin: 10px auto;
+}
+main a{
+  text-decoration: none;
+}
+
+h2{
+
+}
+
+h3{
+  color: #fff;
+}
+
+
+
+/***********************************************/
+/* モバイル版
+/***********************************************/
+@media (max-width: 800px) {
+
+}

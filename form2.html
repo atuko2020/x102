@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Contact_Me YASUAKI-SIMURA  -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>X102_YASUAKI SIMURA</title>
+    <meta name="description" content="form2 YASUAKI-SIMURA">
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- header  -->
+      <header>
+        <h1>X102アンケート2</h1>
+      </header>
+
+      <!-- main  -->
+      <main>
+        <section>
+          <!-- <h2>アンケート2</h2> -->
+          <!-- Warning回避のための見出し -->
+          <form action="#" method="POST" name="contact-form">
+            <label>出席番号<input type="text" required pattern="[AaBbXxSsPp][0-9]{3}" title="例[X100]" name="attendance number" placeholder="ex.X000"></label><br>
+            <label>BananaとCherryとOrangeのどれが好き？<input type="text" required pattern="[Bb]anana|[Cc]herry|[Oo]range" title="BananaとCherryとOrangeのどれかを入力してください。" name="fruit" placeholder="Banana"></label><br>
+            <label>いくつ要ります？<input type="number" required value="1" min="1" max="10" name="total"></label><br>
+
+            <label><button type="submit">Submit</button></label>
+            <!-- <input type="image" src="images/button.png" alt="送信する" 画像付きボタン (20210712修正) -->
+            <!-- <button type="submit"><img src="images/button.png" alt="送信する"></button> (20210705修正) -->
+          </form>
+        </section>
+      </main>
+
+      <!-- footer Sectiion-->
+      <footer>
+        <p>Last Modijied :
+          <script>
+            var modified = new Date(document.lastModified);
+            var year = modified.getFullYear();
+            var month = modified.getMonth() + 1;
+            var date = modified.getDate();
+            var dayName = ["日", "月", "火", "水", "木", "金", "土"]
+
+            var day = modified.getDay();
+
+            document.write(year + "年" + month + "月" + date + "日" + dayName[day] + "曜日");
+          </script>
+        </p>
+        <p><small>&copy;YASUAKI SIMUR, ALL Rights Reserved.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>

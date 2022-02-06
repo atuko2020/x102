@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- Contact_Me YASUAKI-SIMURA  -->
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>X102_YASUAKI SIMURA</title>
+		<meta name="description" content="Contact_Me YASUAKI-SIMURA">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/general.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/contact_me.css">
+		<link rel="shortcut icon" href="./images/index/index_logo.png">
+	</head>
+
+	<body>
+		<div id="container">
+			<!-- header  -->
+			<header>
+        <div id="Owner_data">
+            <div id="Owner_img">
+                <a href="./index.html"><img src="./images/index/index_logo.png" alt="Logo"></a>
+            </div>
+
+            <h1>YASUAKI SHIMURA</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./works.html">WORKS</a></li>
+                <li><a href="./about_me.html">ABOUT</a></li>
+                <li><a href="./contact_me.html">CONTACT</a></li>
+            </ul>
+        </nav>
+      </header>
+
+			<!-- main  -->
+			<main>
+        <div id="Left_page">
+          <img src="images/contact_me/contact_me.png" alt="adout_me.img">
+          <h3>test</h3>
+        </div>
+        <div id="Right_page">
+					<section>
+						<h2>Contact Me</h2>
+						<form action="#" method="POST" name="contact-me">
+							<label>Name:<input type="text" required pattern="{1,15}" title="15文字以下で入力してください。" name="Name" placeholder="Name."></label><br>
+							<!-- <label>Name:<input type="text" required pattern="[a-z,0-9]{1,15}" title="15文字以下で入力してください。" name="Name" placeholder="Name."></label><br> (20210823修正) -->
+							<!--
+								正規表現等のテスト
+								<label>郵便番号:<input type="text" required pattern="[0-9]{3}-?[0-9]{4}" title="xxx-xxxx または xxxxxxx" name="yuubinn" placeholder="郵便番号"></label><br>
+								<label>郵便番号:<input type="text" required maxlength="7" title="-を含まない郵便番号" name="yuubinn" placeholder="郵便番号"></label><br>
+
+								<label for="email">メールアドレス(任意):</label>
+								<input type="email" name="email" id="email"><br>
+
+								<説明>
+								required = 必須入力事項
+								title="" = 注意の入力
+								pattern="" = 入力形式の指定
+								type="number" = 数字の入力 (max, minで範囲の指定 valueで初期値の決定)
+							-->
+							<label>Email Address:<input type="email" required name="Email_Address" placeholder="Email Address"></label><br>
+							<label>Phone Number:<input type="text" required pattern="[0-9]{11,}"  name="Phone_Number" title="11文字以上の数字で入力してください。" placeholder="Phone Number(without'-')"></label><br>
+							<label>Message:<textarea name="Message" rows="5" cols="50" placeholder="message"></textarea></label><br>
+							<label><button type="submit">Send</button></label>
+						</form>
+					</section>
+				</div>
+			</main>
+
+			<!-- footer Sectiion-->
+			<footer>
+				<p>Last Modijied :
+					<script>
+						var modified = new Date(document.lastModified);
+						var year = modified.getFullYear();
+						var month = modified.getMonth() + 1;
+						var date = modified.getDate();
+						var dayName = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+						var day = modified.getDay();
+
+						document.write(year + "/" + month + "/" + date + " " + dayName[day]);
+					</script>
+				</p>
+				<p><small>&copy;YASUAKI SIMUR, ALL Rights Reserved.</small></p>
+			</footer>
+		</div>
+	</body>
+</html>

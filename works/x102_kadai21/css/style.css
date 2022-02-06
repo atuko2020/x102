@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+body{
+  background-image: url(../images/bg.png);
+  margin: 0px;
+}
+
+
+#container{
+  width: 100%;
+  text-align: center;
+}
+
+
+header{
+  height: 300px;
+  background: #faa;
+}
+ul {
+  list-style-position: inside;
+  list-style-image: url(../images/star.png);
+}
+
+
+main{
+  box-sizing: border-box;
+  width: 80%;
+  min-width: 340px;
+  background: #fdd;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0rem;
+}
+
+section{
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+section img{
+  box-sizing: border-box;
+  width: 35%;
+  min-width: 200px;
+}
+section p{
+  box-sizing: border-box;
+  width: 55%;
+  min-width: 320px;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+main section:nth-child(1) p{
+  float: left;
+}
+main section:nth-child(1) img{
+  padding-right: 1rem;
+  text-align: right;
+}
+
+main section:nth-child(2) p{
+  width: 100%;
+}
+
+main section:nth-child(3) p{
+  float: right;
+
+  /* 追加の文 */
+  /*
+  box-sizing: content-box;
+  */
+}
+main section:nth-child(3) img{
+  padding-right: 1rem;
+  text-align: left;
+}
+
+
+h1{
+  font-family: 'Kaisei Tokumin', serif;
+  margin: 0px;
+  padding: 1rem 1rem 0rem;
+  color: #fff;
+}
+h2{
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  /* 2021-10-14 不要な分の削除 */
+  /* margin: 0px; */
+  padding: 0.5rem 0.5rem 0rem;
+  border-width: 0px 0px 5px 5px;
+  border-style: solid ;
+  border-color: #000 #000 #777 #faa;
+  color: #777;
+}
+p{
+  font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+  margin: 0px;
+  text-align: justify;
+  padding: 0rem 1rem;
+  line-height: 1.7;
+  color: #777;
+}
+q{ font-size: 1.2rem }
+
+
+footer{
+  background: #faa;
+}
+footer p{
+  padding: 26px 0px;
+  text-align: center;
+}
+
+
+
+/***********************************************/
+/* 20211025 モバイル版 追加
+/***********************************************/
+@media (max-width: 800px) {
+  main {
+    width: 100%; /* スマホ用では幅100% */
+    box-sizing: border-box;
+  }
+  section p {
+    padding: 0; /* スマホ用では内部余白なし */
+  }
+  main section:nth-child(1) p, /* 1つ目と3つ目のsection */
+  main section:nth-child(3) p {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+    float: none; /* floatの解除 */
+  }
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+header{
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  justify-content: space-around;
+}
+
+#Owner_data{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
+
+  justify-content: space-around;
+}
+
+#Owner_img{
+  margin: auto;
+  min-width: 50px;
+  box-sizing: border-box;
+  float: left;
+}
+#Owner_img a img{
+  width: 50px;
+}
+
+#Owner_data h1{
+  box-sizing: border-box;
+}
+
+
+
+footer{
+  margin: auto;
+  text-align:center;
+  padding: 75px 0 0 0;
+}
+
+
+/***********************************************/
+/* モバイル版
+/***********************************************/
+@media (max-width: 800px) {
+
+}
